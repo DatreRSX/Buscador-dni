@@ -21,6 +21,7 @@ while ( tabla[sumador][0] != ndni &&  sumador < 8 ) {
 if (tabla[sumador][0] == ndni ){
 document.getElementById("nombre").value = tabla[sumador][1];
 document.getElementById("imagen").src= tabla[sumador][2];
+document.getElementById("error").innerHTML=""
 }
 
 else {
