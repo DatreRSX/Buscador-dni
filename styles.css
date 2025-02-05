@@ -8,7 +8,7 @@ body{
   justify-content: center;
   align-items: center;
   display: flex;
-  background-color:rgb(16, 48, 233) ;   
+  background-color:rgb(16, 92, 233) ;   
   flex-direction: column;
   width: 40%; 
   height: auto;
@@ -16,11 +16,64 @@ body{
   border-radius: 10px;
   font-style: italic;
   color: antiquewhite;
+  font-size: 30px;
   }
   
   img
   {
   
-  border: solid 4px black; 
-      
+  border: solid 4px rgb(0, 0, 0); 
+  border-radius: 15px;
   }
+
+  .nombre
+  {
+width: 30%;
+height: auto;
+border:3px solid black;
+font-size: 20px;
+font-family: calibri;
+}
+
+.dni 
+{
+width: 30%;
+height: auto;
+border:3px solid black;
+font-size: 20px;
+font-family: calibri;
+}
+
+.botones
+{
+width: auto;
+height: auto;
+
+
+}
+
+.btnbuscar
+{
+  background-color: turquoise;
+border-radius: 100px;
+border:solid 5px rgb(102, 255, 13);
+font-size: 20px;
+font-weight: bold;
+padding: 12px;
+}
+
+.btnlimpiar
+{
+
+  background-color: turquoise;
+  border-radius: 100px;
+  border:solid 5px rgb(255, 76, 76);
+  font-size: 20px;
+  font-weight: bold;
+  padding:8px;
+}
+
+h1
+{
+ font-size: 30px; 
+}

@@ -11,8 +11,8 @@ tabla[7] =  ["02875856R","Isabel Diaz","Ayuso.jpg"];
 tabla[8] =  ["06020455Z","Angela Merkel","merkel.jpg"];
 
 function f_buscar() {
-let ndni = document.getElementById("dni").value;
-let sumador = 0;
+var ndni = document.getElementById("dni").value;
+var sumador = 0;
 
 while ( tabla[sumador][0] != ndni &&  sumador < 8 ) {
     sumador++;
@@ -21,19 +21,23 @@ while ( tabla[sumador][0] != ndni &&  sumador < 8 ) {
 if (tabla[sumador][0] == ndni ){
 document.getElementById("nombre").value = tabla[sumador][1];
 document.getElementById("imagen").src= tabla[sumador][2];
-document.getElementById("error").innerHTML=""
+document.getElementById("error").innerHTML="";
 }
 
 else {
 document.getElementById("error").innerHTML="No encontrado";
+document.getElementById("error").style.color= "red";
+document.getElementById("nombre").value = "";
+document.getElementById("imagen").src= "dni.png"
+document.getElementById("dni").value = "";
 }
 
 }
 
 function f_limpiar(){
 
-document.getElementById("nombre").value = ""
+document.getElementById("nombre").value = "";
 document.getElementById("imagen").src= "dni.png"
-document.getElementById("dni").value = ""
-document.getElementById("error").innerHTML=""
+document.getElementById("dni").value = "";
+document.getElementById("error").innerHTML="";
 }

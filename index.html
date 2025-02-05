@@ -11,15 +11,15 @@
 <div class="hola">
 
 <label for="dni">DNI:</label>
-<input type="text" name="dni" id="dni">
+<input type="text" name="dni" id="dni" class="dni">
 
 <h1 id="error" class="error"></h1>
-
-<button id="buscar" onclick="f_buscar()">Buscar</button><br>
-<button id="limpiar" onclick="f_limpiar()">Limpiar</button><br>
-
+<div class="botones">
+<button id="buscar" onclick="f_buscar()" class="btnbuscar">Buscar</button>
+<button id="limpiar" onclick="f_limpiar()" class="btnlimpiar">Limpiar</button>
+</div><br>
 <label for="nombre">Nombre:</label>
-<input type="text" name="nombre" id="nombre" readonly><br>
+<input type="text" name="nombre" id="nombre" class="nombre" readonly><br>
 
 <img src="dni.png" id="imagen" alt="imagenDNI" width="200px" height="260px">
 </div>
