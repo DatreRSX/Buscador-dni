@@ -1,6 +1,6 @@
 //array 10X3 DNI NOMBRE Foto
 var tabla = new Array (9);
-tabla[0] =  ["06020487C","Pedro Sanchez","Pedro.jpg"];
+tabla[0] =  ["06020487C","Mariano Rajoy","rajoy.jpg"];
 tabla[1] =  ["51929293A","Javier Milei","Milei.jpg"];
 tabla[2] =  ["06024457D","Santiago Abascal","Santi.jpg"];
 tabla[3] =  ["06025346V","Donald Trump","Donald.jpg"];
@@ -32,6 +32,7 @@ document.getElementById("error").innerHTML="No encontrado";
 function f_limpiar(){
 
 document.getElementById("nombre").value = ""
-document.getElementById("imagen").src= ""
+document.getElementById("imagen").src= "dni.png"
 document.getElementById("dni").value = ""
+document.getElementById("error").innerHTML=""
 }
