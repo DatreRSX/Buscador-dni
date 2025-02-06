@@ -13,7 +13,8 @@ tabla[8] =  ["06020455Z","Angela Merkel","merkel.jpg"];
 //creamos la funcion buscar
 function f_buscar() {
 
-//creamos una variable ndni en la que vamos a almacenar  el valor del elemento con el id dni
+//creamos una variable ndni en la que vamos a almacenar  
+// el valor del elemento con el id dni
 var ndni = document.getElementById("dni").value;
 
 //creamos una variable de control
@@ -25,7 +26,8 @@ while ( tabla[sumador][0] != ndni &&  sumador < 8 ) {
 }
 
 //hacemos una condicion de que si el valor escrito (ndni) es igual 
-// al que encontro el bucle lo muestre en un input de texto en modo lectura
+// al que encontro el bucle lo muestre en un input de texto en modo 
+// lectura
 if (tabla[sumador][0] == ndni ){
 
 //escribe el nombre encontrado
@@ -34,11 +36,13 @@ document.getElementById("nombre").value = tabla[sumador][1];
 //escribe la imagen relacionada al dni
 document.getElementById("imagen").src= tabla[sumador][2];
 
-//quita el rastro de no encontrado por si una busqueda anterior fuen en vano
+//quita el rastro de no encontrado por si una busqueda anterior 
+// fuen en vano
 document.getElementById("error").innerHTML="";
 }
 
-//si la anterior condicion es falsa entonces mostrara no encontrado en un h1
+//si la anterior condicion es falsa entonces mostrara no 
+// encontrado en un h1
 else {
 
 //ecribe no encontrado
