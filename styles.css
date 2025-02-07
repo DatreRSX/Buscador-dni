@@ -1,10 +1,13 @@
 body{
   display: flex;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   }
   
   .hola
   {
+  margin-top: 5%;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -17,6 +20,7 @@ body{
   font-style: italic;
   color: antiquewhite;
   font-size: 30px;
+  box-shadow: 5px 5px 5px gray;
   }
   
   img
